@@ -1,0 +1,206 @@
+/* -------------------------- */
+/* CONFIGURAÇÕES GERAIS DO BODY */
+/* -------------------------- */
+body {
+    font-family: "Inter", sans-serif; /* define a fonte principal do site */
+    color: #F2D3AC;                    /* cor do texto padrão */
+    background-color: #F23838;         /* cor de fundo da página */
+}
+
+/* -------------------------- */
+/* ESTILO DO HEADER (TOPO) */
+/* -------------------------- */
+header {
+    background-color: #F23838; /* mantém a mesma cor do fundo */
+    padding: 20px;             /* espaço interno para não encostar nas bordas */
+}
+
+/* -------------------------- */
+/* CLASSE .topo - USADA PARA PADDING ADICIONAL */
+.topo {
+    padding: 20px; /* espaço interno para separar conteúdo do topo */
+}
+
+/* -------------------------- */
+/* NAVBAR - MENU PRINCIPAL */
+/* -------------------------- */
+#navbar {
+    display: grid;                     /* usa CSS Grid para organizar colunas */
+    grid-template-columns: auto 1fr auto; /* 3 colunas: logo | espaço flexível | opcional */
+    align-items: center;               /* centraliza verticalmente os itens */
+}
+
+/* -------------------------- */
+/* LISTA DO MENU (.menu) */
+/* -------------------------- */
+.menu {
+    display: flex;                     /* coloca os itens do menu lado a lado */
+    justify-self: center;              /* centraliza o menu dentro da coluna do grid */
+    list-style: none;                  /* remove marcadores padrão da lista */
+    gap: 20px;                         /* espaço entre os itens do menu */
+    margin: 0;                          /* remove margem padrão */
+    padding: 0;                         /* remove padding padrão */
+}
+
+/* -------------------------- */
+/* LINKS DO MENU (.menu a) */
+/* -------------------------- */
+.menu a {
+    text-decoration: none; /* remove sublinhado */
+    color: #F2D3AC;        /* cor do link */
+}
+
+/* Mantém a mesma cor após o link ser visitado */
+.menu a:visited {
+    color: #F2D3AC;
+}
+
+/* Efeito ao passar o mouse */
+.menu a:hover {
+    color: #F2E63D;        /* muda a cor no hover */
+    text-decoration: none;  /* mantém sem sublinhado */
+}
+
+/* -------------------------- */
+/* TÍTULOS (H1 A H6) */
+/* -------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Sora", sans-serif; /* fonte diferente para títulos */
+    font-weight: bold;                /* títulos em negrito */
+    letter-spacing: 2px;              /* espaço extra entre letras */
+}
+
+/* -------------------------- */
+/* COR ESPECIAL PARA O #TECH (parte do logo) */
+/* -------------------------- */
+#tech {
+    color: #F2E63D; /* destaque no texto do logo */
+}
+
+/* -------------------------- */
+/* FOOTER / RODAPÉ */
+/* -------------------------- */
+#nav {
+    display: flex;                   /* flex em coluna para centralizar os itens */
+    flex-direction: column;          /* itens empilhados verticalmente */
+    align-items: center;             /* centraliza horizontalmente */
+    gap: 10px;                       /* espaço entre texto e botão */
+    padding: 20px;                   /* espaço interno */
+}
+
+/* CENTRALIZAÇÃO DO TEXTO NO FOOTER */
+.footer-texto p {
+    margin: 0;          /* remove margens padrão dos parágrafos */
+    text-align: center; /* centraliza o texto horizontalmente */
+}
+
+/* CURSOR DE MÃO NO BOTÃO "BACK TO TOP" */
+.backtotop {
+    cursor: pointer;
+}
+
+#produtos {
+    display: flex;
+    flex-direction: column;   /* título em cima, produtos embaixo */
+    align-items: center;      /* centraliza tudo horizontalmente */
+    gap: 20px;                /* espaço entre título e produtos */
+}
+
+/* #produtos h2 {
+    text-align: center;  /* centraliza horizontalmente */
+  /*  margin-bottom: 20px; /* espaço abaixo do título */
+/* }
+
+
+/* Container que segura todos os produtos */
+
+.produtos-container {
+    display: flex;             /* coloca os cards em linha (lado a lado) */
+    justify-content: center;   /* centraliza todos os cards horizontalmente na página */
+    gap: 40px;                 /* espaço entre os cards */
+    flex-wrap: wrap;           /* permite quebrar linha se a tela for pequena (responsivo) */
+}
+
+/* Cada card individual */
+
+.cardProduto {
+    display: flex;             /* flex interno */
+    flex-direction: column;    /* organiza itens em coluna (imagem, título, preço, botão) */
+    align-items: center;       /* centraliza o conteúdo dentro do card */
+    padding: 20px;             /* espaçamento interno do card */
+    background-color: #F23838;    /* fundo branco para destaque */
+    color: #F2D3AC;               /* cor do texto dentro do card */
+    border-radius: 10px;       /* cantos arredondados */
+    box-shadow: 2px 4px 8px #F2E63D; /* sombra suave */
+    width: 220px;              /* largura fixa para cards iguais */
+    text-align: center;        /* centraliza texto */
+}
+/* -------------------------- */
+/* CONTAINER PARA LIMITAR LARGURA */
+/* -------------------------- */
+.container {
+    max-width: 1200px; /* largura máxima do conteúdo */
+    margin: 0 auto;    /* centraliza horizontalmente na página */
+    padding: 0 20px;   /* espaçamento interno nas laterais */
+    
+}
+
+/* Dicas para estudo
+
+Organize seu CSS por seções (geral, header, navbar, footer, títulos, container)
+
+Use comentários como fiz aqui — ajuda a lembrar do propósito de cada bloco
+
+Observe que:
+
+Flex e Grid são usados em lugares diferentes
+
+gap é melhor que margin para espaçamento entre itens em listas ou grids
+
+text-decoration e color controlam links
+
+cursor: pointer é só para interatividade
+
+/* Centralização Perfeita
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+Centraliza vertical e horizontalmente. Funciona para qualquer conteúdo!
+
+Navegação Horizontal com Espaçamento
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+Ideal para headers: logo à esquerda, menu à direita, tudo alinhado verticalmente.
+
+Grid Responsivo de Cards
+Flexbox em Ação: Padrões Comuns
+Veja como resolver desafios de layout que antes eram complexos:
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+1
+Centralização Perfeita
+Centraliza vertical e horizontalmente. Funciona para qualquer conteúdo!
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+2
+Navegação Horizontal com Espaçamento
+Ideal para headers: logo à esquerda, menu à direita, tudo alinhado verticalmente.
+.cards {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+Os cards quebram automaticamente para a próxima linha quando não há espaço

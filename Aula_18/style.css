@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: white;
+    background-color: #7a4d8c;
+}
+
+.navbar {
+    background-color: rgb(194, 140, 224);
+    padding: 0;
+}
+
+.container-fluid {
+    background-color: rgb(194, 140, 224);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sora", sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#login .row {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+  }
+  
+  #login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     }
+
+  .form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .form-row label {
+    width: 30%; /* largura do label */
+    margin-right: 10px;
+    text-align: right;
+  }
+
+  .form-row input {
+    width: 70%; /* largura do input */
+  }
+
+  /* Centraliza botão */
+  .text-center button {
+    width: 100%;
+  }
+  
+  #login form {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px; /* largura máxima da caixa */
+  }
+
+  .input-small {
+    width: 100%;
+  }
+
+#tech {
+    color: #D90416;
+}
+
+.img-container {
+    height: 250px;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.nav-item a {
+    color: #eef0f1
+}
+
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#produtos {
+    text-align: center;
+
+}
+
+img {
+    max-width: 200px;
+}
+
+.cardProduto {
+    background-color: #E4EDF2;
+    color: black;
+    padding: 20px;
+    border: 2px solid #2E4159;
+    border-radius: 15px;
+}
+
+#sobre-nos h2 {
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #E4EDF2;
+}

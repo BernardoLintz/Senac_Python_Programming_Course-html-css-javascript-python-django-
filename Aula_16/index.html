@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<!-- Define que é HTML5 e o idioma como inglês -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Permite que a página seja responsiva em dispositivos móveis -->
+
+    <title>TechStore</title>
+    <!-- Título da página que aparece na aba do navegador -->
+
+    <!-- Preconnect ajuda a carregar fontes mais rápido -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link para carregar fontes do Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_ApprovalStatus msdt:dt="string">0</mso:_ApprovalStatus>
+<mso:_ApprovalAssignedTo msdt:dt="string"></mso:_ApprovalAssignedTo>
+<mso:_ApprovalRespondedBy msdt:dt="string"></mso:_ApprovalRespondedBy>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<!-- CONTAINER PRINCIPAL -->
+<div class="container">
+<!-- .container serve para limitar a largura da página e centralizar o conteúdo -->
+
+<body>
+
+    <!-- ========================= -->
+    <!-- HEADER / TOPO DO SITE -->
+    <!-- ========================= -->
+    <header class="topo">
+        <nav id="navbar">
+            <!-- Nav principal da página -->
+
+            <!-- LOGO DA EMPRESA -->
+            <h1>
+                <span id="techstore">
+                    <span id="tech">TECH</span>STORE
+                </span>
+            </h1>
+
+            <!-- MENU DE NAVEGAÇÃO -->
+            <ul class="menu">
+                <li><a href="#produtos">PRODUTOS</a></li>
+                <li><a href="#sobre-nos">SOBRE NÓS</a></li>
+                <li><a href="#login">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ========================= -->
+    <!-- CONTEÚDO PRINCIPAL -->
+    <!-- ========================= -->
+    <main>
+
+        <!-- SEÇÃO PRODUTOS -->
+        <section id="produtos">
+            <h2>NOSSOS PRODUTOS</h2>
+            <div class="produtos-container"> <!-- container que segura todos os produtos -->
+            <!-- CARD DE PRODUTO 1 -->
+            <div class="cardProduto">
+                <img src="https://m.media-amazon.com/images/I/610VuYNv4KL._AC_UF894,1000_QL80_.jpg" alt="notebook"
+                    width="200px">
+                <h3> Notebook </h3>
+                <p>R$2500,00</p>
+                <button>COMPRAR</button>
+            </div>
+
+            <br><br> <!-- espaçamento extra (poderia ser feito com CSS) -->
+
+            <!-- CARD DE PRODUTO 2 -->
+            <div class="cardProduto" id="smartphone">
+                <img src="https://m.media-amazon.com/images/I/51LkPfkxWgL._AC_SR290,290_.jpg" alt="smartphone"
+                    width="200px">
+                <h3> Smartphone </h3>
+                <p>R$1500,00</p>
+                <button>COMPRAR</button>
+            </div>
+            </div>
+        </section>
+
+        <br>
+        <hr><br> <!-- separador visual entre seções -->
+
+        <!-- SEÇÃO SOBRE-NOS -->
+        <section id="sobre-nos">
+            <h2>Sobre a TechStore</h2>
+
+            <p>
+                Bem-vindo à <strong>TechStore</strong>, o seu destino definitivo para o que há de mais moderno em
+                tecnologia.
+                Fundada em 2024, nossa missão é conectar pessoas à inovação, oferecendo produtos de alta performance
+                que transformam o dia a dia, seja para trabalho, lazer ou criação de conteúdo.
+            </p>
+
+            <h3>Nossa Missão</h3>
+            <p>
+                Democratizar o acesso às últimas novidades do mercado de hardware e periféricos,
+                garantindo qualidade e suporte especializado para entusiastas e profissionais.
+            </p>
+
+            <h3>Por que escolher a TechStore?</h3>
+            <ul>
+                <li><strong>Curadoria Especializada:</strong> Selecionamos apenas as melhores marcas.</li>
+                <li><strong>Suporte Técnico Real:</strong> Nossa equipe entende de hardware e está pronta para ajudar.
+                </li>
+                <li><strong>Entrega Rápida:</strong> Logística eficiente para todo o Brasil.</li>
+                <li><strong>Garantia Estendida:</strong> Confiança total na procedência dos nossos produtos.</li>
+            </ul>
+        </section>
+
+        <br>
+        <hr><br>
+
+        <!-- SEÇÃO LOGIN -->
+        <section id="login">
+            <form>
+                <fieldset>
+                    <legend>LOGIN</legend>
+
+                    <!-- CAMPO EMAIL -->
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email">
+
+                    <!-- CAMPO SENHA -->
+                    <label for="password">Senha</label>
+                    <input type="password" id="password">
+
+                    <button type="submit">Login</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- ========================= -->
+    <!-- FOOTER / RODAPÉ -->
+    <!-- ========================= -->
+    <footer>
+        <nav id="nav">
+
+            <!-- TEXTO DO FOOTER -->
+            <div class="footer-texto">
+                <p>© TechStore 2026</p>
+                <p>(21) 91234-5678</p>
+            </div>
+
+            <!-- BOTÃO VOLTAR AO TOPO -->
+            <a href="#navbar">
+                <img class="backtotop"
+                    src="https://logowik.com/content/uploads/images/back-to-top-with-arrow7938.logowik.com.webp"
+                    alt="topo da pagina" width="80px">
+            </a>
+        </nav>
+    </footer>
+</div>
+<!-- FIM DO CONTAINER PRINCIPAL -->
+
+</body>
+</html>
+
+<!--Observações importantes
+
+Container:
+O <div class="container"> serve para limitar a largura máxima e centralizar o conteúdo.
+
+Header / Nav / Menu:
+
+<header> é semântico, representa topo do site.
+
+<nav> agrupa links de navegação.
+
+Menu em <ul> / <li> / <a> é padrão para SEO e acessibilidade.
+
+Main / Sections:
+
+<main> contém o conteúdo principal.
+
+<section> divide o site em blocos temáticos (produtos, sobre, login).
+
+Cards de Produto:
+
+Cada produto é um <div> com imagem, título, preço e botão.
+
+O <br> é usado para espaçamento, mas CSS seria melhor para layout.
+
+Footer:
+
+Contém textos e botão “voltar ao topo”.
+
+Usar <nav> dentro do footer é opcional, mas faz sentido se o botão for um link de navegação.
+
+Boas práticas:
+
+Evitar <br> para espaçamento → usar margin ou gap no CSS
+
+Agrupar textos em <div> ajuda a centralizar ou aplicar estilos facilmente
+
+IDs e classes ajudam a aplicar CSS específico sem afetar todo o site-->

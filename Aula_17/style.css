@@ -1,0 +1,155 @@
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #F2D3AC;                   
+    background-color: #F23838;        
+}
+
+header {
+    background-color: #F23838; 
+    padding: 20px;             
+}
+
+.topo {
+    display: flex;
+    direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px; 
+}
+
+
+ .navbar {
+    display: flex;                   
+    direction: row;   
+    justify-content: space-around;       
+    align-items: center;            
+
+} 
+
+.nav-item ul {
+    display: flex;  
+    list-style: none;  
+    color: #F2D3AC;
+    gap: 30px;
+    padding: 20px;                                     
+} 
+
+.nav-item ul a {
+    color: #F2D3AC;
+}
+
+.menu a {
+    text-decoration: none; 
+    color: #F2D3AC;       
+}
+
+
+.menu a:visited {
+    color: #F2D3AC;
+}
+
+
+.menu a:hover {
+    color: #F2E63D;        
+    text-decoration: none;  
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Sora", sans-serif;
+    font-weight: bold;               
+    letter-spacing: 2px;             
+}
+
+
+#tech {
+    color: #F2E63D; 
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+.footer-texto p {
+    margin: 0;          
+    text-align: center; 
+}
+
+
+.backtotop {
+    cursor: pointer;
+}
+
+#produtos {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;     
+    gap: 20px;               
+}
+
+#produtos h2 {
+text-align: center;  
+margin-bottom: 20px;
+}
+
+
+.produtos-container {
+    display: flex;            
+    justify-content: center;   
+    gap: 40px;                
+    flex-wrap: wrap;           
+}
+
+
+.cardProduto {
+    display: flex;             
+    flex-direction: column;   
+    align-items: center;      
+    padding: 20px;             
+    background-color: #f1eded;    
+    color: #f50000;               
+    border-radius: 10px;       
+    box-shadow: 2px 4px 8px #F2E63D; 
+    width: 220px;              
+    text-align: center;        
+}
+
+.nav {
+   
+display: flex;
+flex-direction: column; 
+align-items: center;  
+justify-content: center; 
+
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto;    
+    padding: 0 20px;   
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    gap: 10px;
+}
+
+fieldset button {
+    
+    width: 100px;
+}
+

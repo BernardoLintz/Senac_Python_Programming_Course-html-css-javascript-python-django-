@@ -1,0 +1,68 @@
+body{ 
+    margin: 0;
+    font-family: "Inter", sans-serif; 
+    color: #E4EDF2;
+    background-color: #4D6F8C;
+    }
+
+header, footer{
+    background-color: #2E4159;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Sora", sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#tech{ 
+    color: #D90416;
+}
+
+.navbar h1, 
+.navbar .nav-link {
+    color: #E4EDF2 !important;
+}
+
+section{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#produtos{
+    text-align: center;
+}
+
+#produtos img{
+    max-width: 200px;
+    }
+
+.cardProduto{
+    background-color: #E4EDF2;
+    color: black;
+    padding: 20px;
+    border: 2px solid #2E4159;
+    border-radius: 15px;
+}
+
+#sobre-nos h2{
+    text-align: center;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+}
+
+footer a{
+    color: #E4EDF2;
+}
+
+.offcanvas-header{
+    background-color: #2E4159;
+    color: #E4EDF2;
+}
+
+.offcanvas-body{
+    background-color: #E4EDF2;
+}  
