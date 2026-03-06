@@ -1,0 +1,39 @@
+Principais Atalhos de Teclado (Windows/ChromeOS/Linux)
+
+Aqui estão alguns dos comandos mais úteis, com as alternativas para usuários de Mac (entre parênteses, onde Cmd significa Command):
+
+Guias e Janelas:
+Abrir nova guia: Ctrl + T (Cmd + T no Mac).
+Fechar guia atual: Ctrl + W (Cmd + W no Mac).
+Reabrir a última guia fechada: Ctrl + Shift + T (Cmd + Shift + T no Mac).
+Alternar entre guias (próxima): Ctrl + Tab ou Ctrl + PgDn (Cmd + Option + Seta para a direita no Mac).
+Alternar entre guias (anterior): Ctrl + Shift + Tab ou Ctrl + PgUp (Cmd + Option + Seta para a esquerda no Mac).
+Ir para uma guia específica (1 a 8): Ctrl + [número] (Cmd + [número] no Mac).
+Ir para a última guia: Ctrl + 9 (Cmd + 9 no Mac).
+Abrir nova janela: Ctrl + N (Cmd + N no Mac).
+Abrir nova janela anônima: Ctrl + Shift + N (Cmd + Shift + N no Mac).
+
+Navegação:
+Voltar na página/histórico: Alt + Seta para a esquerda (Cmd + Seta para a esquerda no Mac).
+Avançar na página/histórico: Alt + Seta para a direita (Cmd + Seta para a direita no Mac).
+Recarregar a página atual: F5 ou Ctrl + R (Cmd + R no Mac).
+Recarregar a página (forçar, ignorando o cache): Ctrl + Shift + R ou Ctrl + F5 (Cmd + Shift + R no Mac).
+Parar de carregar a página: Esc.
+Acessar a barra de endereço (Omnibox): Ctrl + L ou Alt + D ou F6 (Cmd + L no Mac).
+
+Funcionalidades e Ferramentas:
+Abrir a página de Downloads: Ctrl + J (Cmd + J no Mac).
+Abrir o Gerenciador de Tarefas do Chrome: Shift + Esc.
+Abrir as Ferramentas do Desenvolvedor: Ctrl + Shift + I ou F12 (Cmd + Option + I no Mac).
+Abrir o histórico completo: Ctrl + H (Cmd + Y no Mac).
+Abrir a página de favoritos: Ctrl + B ou Ctrl + Shift + O (Cmd + Option + B no Mac).
+Adicionar página aos favoritos: Ctrl + D (Cmd + D no Mac).
+Imprimir a página atual: Ctrl + P (Cmd + P no Mac).
+Salvar a página atual: Ctrl + S (Cmd + S no Mac).
+Encontrar texto na página: Ctrl + F (Cmd + F no Mac).
+
+Zoom e Visualização:
+Aumentar o zoom: Ctrl + + (Cmd + + no Mac).
+Diminuir o zoom: Ctrl + - (Cmd + - no Mac).
+Redefinir o zoom para o padrão: Ctrl + 0 (Cmd + 0 no Mac).
+Alternar modo de tela cheia: F11 (Cmd + Ctrl + F no Mac). 
