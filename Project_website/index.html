@@ -1,60 +1,1342 @@
 <!DOCTYPE html>
-<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office"
+  xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LINTZ ADVOGADOS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-
-<!--[if gte mso 9]><xml>
-<mso:CustomDocumentProperties>
-<mso:_ApprovalStatus msdt:dt="string">0</mso:_ApprovalStatus>
-<mso:_ApprovalAssignedTo msdt:dt="string"></mso:_ApprovalAssignedTo>
-<mso:_ApprovalRespondedBy msdt:dt="string"></mso:_ApprovalRespondedBy>
-</mso:CustomDocumentProperties>
-</xml><![endif]-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LINTZ ADVOGADOS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body>
-    <header>
-        <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="C:\Users\62118022025.3\Desktop\Python\Projeto_Site_Escritorio\imagens\logo" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-        Lintz Advogados
-      </a>
-    </div>
-  </nav>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Áreas de atuação</a>
-          <a class="nav-link" href="#">Profissionais</a>
-          <a class="nav-link" href="#">Sobre nós</a>
-          <a class="nav-link" href="#">Contato</a>
+<body>
+
+  <header class="sticky-top bg-white shadow-sm">
+
+    <nav class="container-fluid d-flex justify-content-between align-items-center py-3">
+      <a class="navbar-brand d-flex align-items-center" href="#" style="text-decoration: none; color: inherit;">
+        <img src="logo_lintz_advogados.png" alt="Logo" class="me-3" style="height: 60px; width: auto;">
+        <div class="d-flex flex-column lh-1 text-start">
+          <span class="fw-bold"
+            style="font-size: 1rem; letter-spacing: 2px; font-family: 'Manrope', sans-serif;">LINTZ</span>
+          <span
+            style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; font-family: 'Manrope', sans-serif;">Advogados</span>
+        </div>
+      </a>
+
+      <div class="d-flex flex-column align-items-end gap-4">
+
+        <div class="d-flex justify-content-end align-items-center gap-4">
+          <div class="d-flex align-items-center text-end">
+            <i class="bi bi-telephone-fill me-2" style="color: #555252; font-size: 0.9rem;"></i>
+            <div class="lh-1" style="font-family: 'Manrope', sans-serif;">
+              <div style="font-size: 0.8rem; color: #949191;">+55 21 3148 4340</div>
+              <div style="font-size: 0.8rem; color: #949191;">contato@lintzadv.com</div>
+            </div>
           </div>
+
+          <div class="d-flex align-items-center text-end">
+            <i class="bi bi-clock-fill me-2" style="color: #555252; font-size: 0.9rem;"></i>
+            <div class="lh-1" style="font-size: 0.7rem; color: #949191; font-family: 'Manrope', sans-serif;">
+              <div>Seg - Qui 10h - 18h</div>
+              <div>Sex 10h - 14h</div>
+            </div>
+          </div>
+
+          <div class="fw-bold" style="font-size: 0.7rem; color: #949191;">בס"ד</div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg p-0">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav gap-3">
+              <a class="nav-link fw-normal p-0" style="font-size: 0.75rem; font-family: 'Manrope', sans-serif;"
+                href="#">HOME</a>
+              <a class="nav-link fw-normal p-0" style="font-size: 0.75rem; font-family: 'Manrope', sans-serif;"
+                href="#institucional">INSTITUCIONAL</a>
+              <a class="nav-link fw-normal p-0" style="font-size: 0.75rem; font-family: 'Manrope', sans-serif;"
+                href="#areas-atuacao">ÁREAS DE ATUAÇÃO</a>
+              <a class="nav-link fw-normal p-0" style="font-size: 0.75rem; font-family: 'Manrope', sans-serif;"
+                href="#clientes">CLIENTES</a>
+              <a class="nav-link fw-normal p-0" style="font-size: 0.75rem; font-family: 'Manrope', sans-serif;"
+                href="#profissionais">PROFISSIONAIS</a>
+              <a class="nav-link fw-normal p-0" style="font-size: 0.75rem; font-family: 'Manrope', sans-serif;"
+                href="#materias">MATÉRIAS</a>
+              <a class="nav-link fw-normal p-0" style="font-size: 0.75rem; font-family: 'Manrope', sans-serif;"
+                href="#fale_conosco">FALE CONOSCO</a>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </nav>
+  </header>
+  <main>
+    <nav class="matriz_rio_de_janeiro">
+      <section class="hero-section">
+        <div class="hero-bg" style="background-image: url('index.jpg');"></div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+          <div class="text-center text-white hero-content">
+            <h1 class="hero-animated-text">
+              <span class="word">EXPERIÊNCIA.</span>
+              <span class="word">INOVAÇÃO.</span>
+              <span class="word">EXCELÊNCIA.</span>
+            </h1>
+          </div>
+        </div>
+      </section>
+    </nav>
+    <section id="institucional" class="py-5 d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+
+            <h2 class="section-title">INSTITUCIONAL</h2>
+
+            <div class="content-wrapper">
+              <h3 class="mt-4">Tradição e Excelência: Quase Meio Século de Advocacia</h3>
+              <p>Fundado em <span class="highlight">1978</span> pelo <span class="highlight">Dr. Marco Antônio Lintz
+                  Leite</span>, o escritório <span class="highlight">Lintz Advogados</span> consolidou sua base sobre os
+                pilares da ética e da técnica jurídica refinada. Iniciando suas atividades na emblemática Avenida
+                Franklin Roosevelt, no coração do Rio de Janeiro, a banca estabeleceu uma trajetória de crescimento
+                constante. Em 1983, a sede migrou para a Travessa do Paço, onde, por mais de duas décadas, o escritório
+                protagonizou defesas memoráveis e construiu sua reputação de solidez.</p>
+
+              <h3 class="mt-5">Expansão Estratégica e Atuação Global</h3>
+              <p>Sempre atento às movimentações do Poder Judiciário, em <span class="highlight">2006</span>, o Lintz
+                Advogados realizou um movimento estratégico ao transferir sua sede para a <span class="highlight">Barra
+                  da Tijuca</span> acompanhando a inauguração do Foro Regional e posicionando-se em um dos principais
+                vetores de crescimento da cidade. Hoje, com mais de <span class="highlight">45 anos de atuação</span>,
+                nossa estrutura transcende fronteiras. Além da forte presença nacional, mantemos uma unidade em <span
+                  class="highlight">Portugal</span>, onde oferecemos suporte jurídico especializado em: Processos de
+                Cidadania Portuguesa e homologação de sentenças estrangeiras; Planejamento sucessório internacional
+                (Heranças e Divórcios); Obtenção de certidões, autenticações e consultoria em processos especiais.</p>
+
+              <h3 class="mt-5">Um Legado Jurídico de Gerações</h3>
+              <p>O diferencial do Lintz Advogados reside em seu <span class="highlight">notório saber jurídico</span>,
+                uma herança intrínseca da <span class="highlight">Família Lintz Bemfica</span>. Nossa história é
+                entrelaçada à magistratura e ao Ministério Público, contando com representantes em diversas esferas do
+                Direito, como Desembargadores, Juízes e Defensores Públicos. Honramos a memória e o rigor técnico do
+                saudoso advogado e jurista <span class="highlight">Dr. Landulpho Lintz</span>, cuja conduta ilibada
+                serve como bússola para nossa prática diária. Essa linhagem de juristas garante aos nossos clientes não
+                apenas uma defesa técnica, mas uma visão profunda e estratégica das cortes superiores.</p>
+
+              <h3 class="mt-5">Compromisso com o Resultado</h3>
+              <p>Atuamos com expertise multidisciplinar, abrangendo o Direito Civil, Penal (com foco em Tribunais
+                Superiores e Sustentação Oral), Trabalhista e Societário. Nosso compromisso é a fidelidade absoluta aos
+                interesses de nossos constituintes, aliando a tradição de quase 50 anos à agilidade que o mercado
+                moderno exige.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="areas-atuacao" class="secao-areas-custom">
+      <div class="fundo-rio-opacidade"></div>
+
+      <div class="container container-conteudo">
+        <h2 class="section-title text-center mb-5" style="color: #000000; font-weight: 700;">ÁREAS DE ATUAÇÃO</h2>
+        <div class="container-areas">
+          <ul class="lista-areas-grid">
+            <li class="area-item" data-bs-toggle="modal" data-bs-target="#modalAmbiental">
+              <i class="fas fa-leaf"></i>
+              <span>Direito Ambiental</span>
+            </li>
+
+            <li class="area-item" data-bs-toggle="modal" data-bs-target="#modalConsumidor">
+              <i class="fas fa-shopping-cart"></i>
+              <span>Direito do Consumidor</span>
+            </li>
+
+            <li class="area-item" data-bs-toggle="modal" data-bs-target="#modalCivil">
+              <i class="fa-regular fa-handshake"></i>
+              <span>Direito Civil</span>
+            </li>
+
+            <li class="area-item" data-bs-toggle="modal" data-bs-target="#modalInternacional">
+              <i class="fas fa-globe"></i>
+              <span>Direito Internacional e Cidadania</span>
+            </li>
+
+            <li class="area-item" data-bs-toggle="modal" data-bs-target="#modalMaritimo">
+              <i class="fas fa-ship"></i>
+              <span>Direito Marítimo & Portuário</span>
+            </li>
+
+            <li class="area-item" data-bs-toggle="modal" data-bs-target="#modalPenal">
+              <i class="fas fa-balance-scale"></i>
+              <span>Direito Penal</span>
+            </li>
+
+            <li class="area-item" data-bs-toggle="modal" data-bs-target="#modalTrabalhista">
+              <i class="fas fa-briefcase"></i>
+              <span>Direito Trabalhista</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalAmbiental" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+          <div class="modal-content border-0 shadow-lg" style="font-family: 'Manrope', sans-serif;">
+
+            <div class="modal-header border-0 p-4">
+              <h5 class="modal-title fw-bold" style="color: #002d72; display: none;">Detalhes da Área</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body px-5 pb-5">
+
+              <h2 style="color: #002d72; font-weight: 700; font-size: 2rem;">Ambiental</h2>
+              <div style="width: 45px; height: 3px; background-color: #e65100; margin: 20px 0;"></div>
+
+              <p style="color: #007bff; font-size: 1.15rem; line-height: 1.6; font-weight: 500; text-align: justify;">
+                No cenário atual, a gestão ambiental estratégica é um pilar de valorização para qualquer organização.
+                Atuamos na interseção entre o rigor normativo e as metas de mercado, transformando desafios regulatórios
+                em diferenciais competitivos. Nossa abordagem foca na mitigação de passivos e na construção de uma
+                governança sólida, garantindo que o crescimento do seu negócio caminhe lado a lado com a proteção ao
+                ecossistema.
+              </p>
+
+              <div class="my-4">
+                <img src="direito_ambiental.jpg" class="img-fluid" alt="Direito Ambiental"
+                  style="width: 100%; border-radius: 4px; max-height: 400px; object-fit: cover;">
+              </div>
+              <div style="color: #555; line-height: 1.8; text-align: justify; font-size: 0.95rem;">
+                <p>Apoiamos empresas de diversos segmentos — desde o agronegócio e energia até os setores industriais e
+                  financeiros —
+                  na navegação pelo complexo sistema legislativo ambiental brasileiro e internacional. Nossa consultoria
+                  é personalizada
+                  para atender às demandas específicas de cada operação, oferecendo uma visão 360° sobre o impacto
+                  regulatório.</p>
+
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <h5 class="fw-bold mt-4 mb-2" style="color: #002d72; font-size: 1.1rem;">Contencioso de Performance
+                    </h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Defesa Administrativa e
+                        Judicial.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Negociação Estratégica.
+                      </li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Gerenciamento de Crises.
+                      </li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Responsabilidade de
+                        Gestores.</li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-6">
+                    <h5 class="fw-bold mt-4 mb-2" style="color: #002d72; font-size: 1.1rem;">Consultivo e Governança ESG
+                    </h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Licenciamento e
+                        Operação.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Economia de Carbono.
+                      </li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Auditoria (Due
+                        Diligence).</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Resíduos e Emissões.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="p-4 mt-5"
+                  style="background-color: #f8f9fa; border-left: 4px solid #002d72; border-radius: 4px;">
+                  <h6 class="fw-bold mb-3" style="color: #002d72;">Diferenciais Estratégicos:</h6>
+                  <p class="small mb-0" style="color: #666; line-height: 1.6;">
+                    Ao fortalecer a conformidade ambiental, facilitamos o acesso a linhas de crédito verde e
+                    investimentos internacionais, reduzindo o prêmio de apólices de seguro e garantindo a perenidade do
+                    negócio perante acionistas e o mercado global.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="modalConsumidor" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+          <div class="modal-content border-0 shadow-lg" style="font-family: 'Manrope', sans-serif;">
+
+            <div class="modal-header border-0 p-4">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body px-5 pb-5">
+              <h2 style="color: #002d72; font-weight: 700; font-size: 2rem;">Direito do Consumidor</h2>
+              <div style="width: 45px; height: 3px; background-color: #e65100; margin: 20px 0;"></div>
+
+              <p style="color: #007bff; font-size: 1.15rem; line-height: 1.6; font-weight: 500; text-align: justify;">
+                A rigorosa aplicação da legislação consumerista no Brasil exige que as empresas operem com uma
+                estratégia jurídica preventiva e sofisticada. Nosso time atua na gestão de ambientes altamente
+                regulados, equilibrando o cumprimento das normas com os objetivos comerciais de nossos clientes,
+                mitigando riscos reputacionais e financeiros em um cenário de constante fiscalização.
+              </p>
+
+              <div class="my-4">
+                <img src="defesa-do-consumidor.jpg" class="img-fluid" alt="Direito do Consumidor Estratégico"
+                  style="width: 100%; border-radius: 4px; max-height: 400px; object-fit: cover;">
+              </div>
+
+              <div style="color: #555; line-height: 1.8; text-align: justify; font-size: 0.95rem;">
+                <p>Oferecemos suporte completo na interlocução com órgãos públicos — como PROCON, Ministério Público e
+                  SENACON — e na condução de litígios complexos, incluindo Ações Civis Públicas e demandas de alto
+                  impacto (<i>bet-the-company</i>). Nossa expertise une o direito comparado à análise técnica de
+                  responsabilidade por produtos, entregando soluções práticas alinhadas às políticas internas de cada
+                  organização.</p>
+
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <h5 class="fw-bold mt-4 mb-2" style="color: #002d72; font-size: 1.1rem;">Contencioso</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><span style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Setor
+                        Aéreo e Logística.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Instituições
+                        Financeiras.</li>
+                      <li class="mb-2"><span style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Ações
+                        Coletivas e ACPs.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Atuação em Tribunais.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-6">
+                    <h5 class="fw-bold mt-4 mb-2" style="color: #002d72; font-size: 1.1rem;">Consultivo</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Interlocução
+                        Institucional.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Gestão de Recall.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Direito Digital e LGPD.
+                      </li>
+                      <li class="mb-2"><span style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Life
+                        Sciences e Inovação.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="p-4 mt-5"
+                  style="background-color: #f8f9fa; border-left: 4px solid #002d72; border-radius: 4px;">
+                  <h6 class="fw-bold mb-3" style="color: #002d72;">Inteligência jurídica a favor do negócio:</h6>
+                  <p class="small mb-0" style="color: #666; line-height: 1.6;">
+                    Trabalhamos para que a conformidade com o Código de Defesa do Consumidor seja um facilitador de
+                    novos negócios e uma garantia de perenidade para a marca, antecipando tendências jurisprudenciais e
+                    mapeando as posições dos tribunais.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="modalCivil" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+          <div class="modal-content border-0 shadow-lg" style="font-family: 'Manrope', sans-serif;">
+
+            <div class="modal-header border-0 p-4">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body px-5 pb-5">
+              <h2 style="color: #002d72; font-weight: 700; font-size: 2rem;">Direito Civil</h2>
+              <div style="width: 45px; height: 3px; background-color: #e65100; margin: 20px 0;"></div>
+
+              <p style="color: #007bff; font-size: 1.15rem; line-height: 1.6; font-weight: 500; text-align: justify;">
+                O Direito Civil constitui o núcleo normativo das relações privadas, exigindo uma advocacia que harmonize
+                rigor técnico com visão estratégica.
+                Nossa atuação abrange a proteção integral dos interesses patrimoniais e extrapatrimoniais de nossos
+                clientes, por meio de uma advocacia de alta performance.</p>
+
+              <div class="my-4">
+                <img src="direito-civil.jpg" class="img-fluid" alt="Direito Civil"
+                  style="width: 100%; border-radius: 4px; max-height: 400px; object-fit: cover;">
+              </div>
+
+              <div style="color: #555; line-height: 1.8; text-align: justify; font-size: 0.95rem;">
+
+                <p>
+                  Nossa banca atua de forma incisiva em todas as esferas judiciais, com foco em Responsabilidade Civil e
+                  Gestão Contratual.
+                  Unimos rigor acadêmico à prática forense para estruturar negócios imobiliários e societários seguros,
+                  assegurando a reparação de danos e a
+                  proteção patrimonial com máxima eficiência jurídica.
+                </p>
+
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <h5 class="fw-bold mt-4 mb-2" style="color: #002d72; font-size: 1.1rem;">Contencioso</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Responsabilidade Civil.
+                      </li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Disputas Contratuais.
+                      </li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Família e Sucessões.
+                      </li>
+                      <li class="mb-2"><span style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Ações
+                        Possessórias.</li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-6">
+                    <h5 class="fw-bold mt-4 mb-2" style="color: #002d72; font-size: 1.1rem;">Consultivo</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Elaboração de Contratos.
+                      </li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Planejamento Sucessório.
+                      </li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Assessoria Imobiliária.
+                      </li>
+                      <li class="mb-2"><span style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Due
+                        Diligence e Compliance.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="p-4 mt-5"
+                  style="background-color: #f8f9fa; border-left: 4px solid #002d72; border-radius: 4px;">
+                  <h6 class="fw-bold mb-3" style="color: #002d72;">Segurança jurídica e proteção patrimonial:</h6>
+                  <p class="small mb-0" style="color: #666; line-height: 1.6;">
+                    Nossa advocacia preza pela mitigação qualificada de riscos e pela resolução estratégica de disputas,
+                    garantindo que os interesses patrimoniais e extrapatrimoniais de nossos clientes estejam amparados
+                    pelo máximo rigor jurídico.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="modalInternacional" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+          <div class="modal-content border-0 shadow-lg" style="font-family: 'Manrope', sans-serif;">
+
+            <div class="modal-header border-0 p-4 pb-0">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body px-5 pb-5">
+              <h2 style="color: #002d72; font-weight: 700; font-size: 2rem;">Direito Internacional e Cidadania</h2>
+              <div style="width: 45px; height: 3px; background-color: #e65100; margin: 20px 0;"></div>
+
+              <p style="color: #007bff; font-size: 1.15rem; line-height: 1.6; font-weight: 500; text-align: justify;">
+                Em um mundo cada vez mais conectado, as fronteiras não devem ser obstáculos para seus objetivos pessoais
+                ou empresariais. Nossa equipe oferece suporte jurídico integral para quem busca mobilidade global,
+                reconhecimento de cidadanias e segurança em transações transfronteiriças, unindo conhecimento técnico à
+                agilidade necessária nos processos internacionais.
+              </p>
+
+              <div class="my-4">
+                <img src="cidadania_portuguesa.png" class="img-fluid" alt="Direito Internacional"
+                  style="width: 100%; border-radius: 4px; max-height: 400px; object-fit: cover;">
+              </div>
+
+              <div style="color: #555; line-height: 1.8; text-align: justify; font-size: 0.95rem;">
+                <p>Atuamos como facilitadores em processos complexos de nacionalidade e regularização migratória, além
+                  de oferecer consultoria em contratos internacionais, garantindo que nossos clientes estejam amparados
+                  tanto pela legislação brasileira quanto pelas normas dos países de destino.</p>
+
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <h5 class="fw-bold mt-4 mb-2" style="color: #002d72; font-size: 1.1rem;">Contencioso</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Homologação de Sentenças
+                        Estrangeiras.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Cartas Rogatórias e
+                        Cooperação.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Extradição e Medidas
+                        Urgentes.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Recuperação de Ativos.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-6">
+                    <h5 class="fw-bold mt-4 mb-2" style="color: #002d72; font-size: 1.1rem;">Consultivo</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Processos de
+                        Nacionalidade (Portuguesa).</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Mobilidade Global e
+                        Imigração.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Contratos
+                        Transnacionais.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Planejamento Sucessório
+                        Internacional.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Compliance Migratório.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="p-4 mt-5"
+                  style="background-color: #f8f9fa; border-left: 4px solid #002d72; border-radius: 4px;">
+                  <h6 class="fw-bold mb-3" style="color: #002d72;">Segurança jurídica além das fronteiras:</h6>
+                  <p class="small mb-0" style="color: #666; line-height: 1.6;">
+                    Nossa consultoria permite que indivíduos e empresas expandam seus horizontes com a certeza de que
+                    todos os trâmites burocráticos e legais estão sendo conduzidos com o máximo rigor e conformidade
+                    internacional.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="modal fade" id="modalMaritimo" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+          <div class="modal-content border-0 shadow-lg" style="font-family: 'Manrope', sans-serif;">
+
+            <div class="modal-header border-0 p-4">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body px-5 pb-5">
+              <h2 style="color: #002d72; font-weight: 700; font-size: 2rem;">Direito Marítimo & Portuário</h2>
+              <div style="width: 45px; height: 3px; background-color: #e65100; margin: 20px 0;"></div>
+
+              <p style="color: #007bff; font-size: 1.15rem; line-height: 1.6; font-weight: 500; text-align: justify;">
+                O dinamismo da infraestrutura portuária e logística brasileira exige uma assessoria jurídica de alta
+                especialização. Atuamos de forma integrada para oferecer soluções em assuntos regulatórios, tributários
+                e contratuais, garantindo que armadores, operadores e instituições financeiras naveguem com segurança
+                jurídica em um mercado em constante expansão.
+              </p>
+
+              <div class="my-4">
+                <img src="direito_maritimo_e_portuario.png" class="img-fluid" alt="Direito Marítimo e Portuário"
+                  style="width: 100%; border-radius: 4px; max-height: 400px; object-fit: cover;">
+              </div>
+
+              <div style="color: #555; line-height: 1.8; text-align: justify; font-size: 0.95rem;">
+                <p>Nossa banca fornece suporte estratégico em operações complexas que envolvem desde o financiamento
+                  naval até a estruturação de grandes projetos de engenharia. Atendemos estaleiros, companhias de
+                  navegação e agências internacionais, cobrindo todas as nuances das atividades offshore e marítimas.
+                </p>
+
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <h5 class="fw-bold mt-4 mb-2" style="color: #002d72; font-size: 1.1rem;">Contencioso</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Acidentes e Emergências.
+                      </li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Medidas
+                        de Arresto.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Execução de Hipotecas
+                        Navais.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Gestão
+                        de Reivindicações (Claims).</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Defesa
+                        Administrativa.</li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-6">
+                    <h5 class="fw-bold mt-4 mb-2" style="color: #002d72; font-size: 1.1rem;">Consultivo</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Financiamento Naval e
+                        FMM.
+                      </li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Contratos de Engenharia
+                        (EPC).</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Licitações e Mercado
+                        Offshore.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Regulatório ANTAQ.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Transferência de
+                        Tecnologia.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Assessoria Financeira.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="p-4 mt-5"
+                  style="background-color: #f8f9fa; border-left: 4px solid #002d72; border-radius: 4px;">
+                  <h6 class="fw-bold mb-3" style="color: #002d72;">Soluções integradas para o setor aquaviário:</h6>
+                  <p class="small mb-0" style="color: #666; line-height: 1.6;">
+                    Combinamos profundo conhecimento técnico sobre a legislação marítima com uma visão prática do
+                    mercado logístico. Nosso objetivo é mitigar riscos fiscais e operacionais, assegurando a eficiência
+                    de contratos de transferência de tecnologia e a defesa robusta em reivindicações judiciais e
+                    extrajudiciais.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalPenal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+          <div class="modal-content border-0 shadow-lg" style="font-family: 'Manrope', sans-serif;">
+
+            <div class="modal-header border-0 p-4">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body px-5 pb-5">
+
+              <h2 style="color: #002d72; font-weight: 700; font-size: 2rem;">Direito Penal</h2>
+              <div style="width: 45px; height: 3px; background-color: #e65100; margin: 20px 0;"></div>
+
+              <p style="color: #007bff; font-size: 1.15rem; line-height: 1.6; font-weight: 500; text-align: justify;">
+                A defesa da liberdade e da dignidade exige uma atuação jurídica técnica, destemida e estratégica. Nosso
+                escritório atua de forma especializada em causas complexas, unindo o rigor da análise processual à
+                eloquência da sustentação oral nos Tribunais, garantindo que a voz de nossos clientes seja ouvida com
+                autoridade e precisão técnica perante o Judiciário.
+              </p>
+
+              <div class="my-4">
+                <img src="direito_penal.png" class="img-fluid" alt="Direito Penal"
+                  style="width: 100%; border-radius: 4px; max-height: 400px; object-fit: cover;">
+              </div>
+
+              <div style="color: #555; line-height: 1.8; text-align: justify; font-size: 0.95rem;">
+                <p>Compreendemos que o Direito Penal demanda uma resposta rápida e uma presença constante. Nossa banca é
+                  preparada para intervir em todas as fases da persecução penal, desde o acompanhamento em inquéritos
+                  policiais até a interposição de recursos extraordinários nas instâncias superiores em Brasília.</p>
+
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <h5 class="fw-bold mt-4 mb-2" style="color: #002d72; font-size: 1.1rem;">Contencioso
+                    </h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Defesa em Investigações.
+                      </li>
+                      <li class="mb-2"><span style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Ações
+                        Judiciais.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Tribunal do Júri.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Medidas de Urgência.
+                      </li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Direito das Vítimas.
+                      </li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Acordos Penais (ANPP).
+                      </li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Processos
+                        Administrativos.</li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-6">
+                    <h5 class="fw-bold mt-4 mb-2" style="color: #002d72; font-size: 1.1rem;">Consultivo
+                    </h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Análise de Risco
+                        Criminal.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Compliance
+                        Criminal.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Consultoria
+                        Estratégica.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Prevenção de
+                        Fraudes.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Relações de Consumo
+                        e Trabalho.</li>
+                      <li class="mb-2"><span
+                          style="color: #007bff; font-weight: bold; margin-right: 8px;">—</span>Auditoria
+                        Interna.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="p-4 mt-5"
+                  style="background-color: #f8f9fa; border-left: 4px solid #002d72; border-radius: 4px;">
+                  <h6 class="fw-bold mb-3" style="color: #002d72;">Compromisso com a Defesa Plena:</h6>
+                  <p class="small mb-0" style="color: #666; line-height: 1.6;">
+                    Acreditamos que cada caso possui particularidades que exigem um olhar artesanal. Nossa missão é
+                    assegurar que o devido processo legal seja respeitado integralmente, utilizando as ferramentas mais
+                    modernas da advocacia criminal contemporânea para obter o melhor resultado jurídico possível.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="modalTrabalhista" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+          <div class="modal-content border-0 shadow-lg" style="font-family: 'Manrope', sans-serif;">
+
+            <div class="modal-header border-0 p-4">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body px-5 pb-5">
+              <h2 style="color: #002d72; font-weight: 700; font-size: 2rem;">Direito Trabalhista</h2>
+              <div style="width: 45px; height: 3px; background-color: #e65100; margin: 20px 0;"></div>
+
+              <p style="color: #007bff; font-size: 1.15rem; line-height: 1.6; font-weight: 500; text-align: justify;">
+                A constante evolução das dinâmicas laborais exige que as empresas adotem posturas ágeis e seguras. Nossa
+                atuação integra especialistas multidisciplinares para oferecer uma gestão técnica e criativa das
+                relações de trabalho, focada tanto na mitigação estratégica do passivo quanto no fortalecimento da
+                cultura de compliance e prevenção de conflitos.
+              </p>
+
+              <div class="my-4">
+                <img src="direito_trabalhista.png" class="img-fluid" alt="Direito Trabalhista Corporativo"
+                  style="width: 100%; border-radius: 4px; max-height: 400px; object-fit: cover;">
+              </div>
+
+              <div style="color: #555; line-height: 1.8; text-align: justify; font-size: 0.95rem;">
+                <p>Unimos visão global e expertise técnica para fornecer soluções personalizadas que garantem a
+                  sustentabilidade das operações de nossos clientes. Atuamos em todas as esferas, desde o suporte
+                  cotidiano ao RH até sustentações orais decisivas nos Tribunais Superiores (TST e STF).</p>
+
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <h5 class="fw-bold mb-3" style="color: #002d72; font-size: 1.1rem;">Contencioso</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><span style="color: #007bff; font-weight: bold;">—</span> Defesa em ações
+                        individuais e coletivas estratégicas.</li>
+                      <li class="mb-2"><span style="color: #007bff; font-weight: bold;">—</span> Gestão inteligente de
+                        carteiras para redução de contingências.</li>
+                      <li class="mb-2"><span style="color: #007bff; font-weight: bold;">—</span> Atuação perante o
+                        Ministério Público do Trabalho (MPT).</li>
+                      <li class="mb-2"><span style="color: #007bff; font-weight: bold;">—</span> Recursos e sustentações
+                        orais em instâncias superiores.</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h5 class="fw-bold mb-3" style="color: #002d72; font-size: 1.1rem;">Consultivo</h5>
+                    <ul class="list-unstyled">
+                      <li class="mb-2"><span style="color: #007bff; font-weight: bold;">—</span> Estruturação de planos
+                        de remuneração e <i>Stock Options</i>.</li>
+                      <li class="mb-2"><span style="color: #007bff; font-weight: bold;">—</span> Auditorias de rotinas e
+                        investigações internas de assédio.</li>
+                      <li class="mb-2"><span style="color: #007bff; font-weight: bold;">—</span> Treinamentos de conduta
+                        e segurança do trabalho.</li>
+                      <li class="mb-2"><span style="color: #007bff; font-weight: bold;">—</span> Adequação de padrões
+                        internacionais à lei brasileira.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h5 class="fw-bold mt-4 mb-3" style="color: #002d72; font-size: 1.1rem;">Relações Sindicais e Coletivas:
+                </h5>
+                <p>Nossa banca possui vasta experiência na condução de negociações de Acordos e Convenções Coletivas,
+                  mediações em tribunais para solução de conflitos de massa e estruturação de planos de Participação nos
+                  Lucros e Resultados (PLR), sempre buscando o equilíbrio entre produtividade e paz social.</p>
+
+                <div class="p-4 mt-5"
+                  style="background-color: #f8f9fa; border-left: 4px solid #002d72; border-radius: 4px;">
+                  <h6 class="fw-bold mb-3" style="color: #002d72;">Segurança para o crescimento da força de trabalho:
+                  </h6>
+                  <p class="small mb-0" style="color: #666; line-height: 1.6;">
+                    Nosso compromisso é promover um ambiente laboral saudável e eficiente. Ao integrar o jurídico ao
+                    coração do negócio, transformamos a gestão de recursos humanos em um ativo estratégico, minimizando
+                    vulnerabilidades e potencializando a retenção de talentos com absoluta segurança legal.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </section>
+
+
+
+    <section id="clientes" class="secao-clientes-custom">
+      <div class="fundo-rio-opacidade"></div>
+
+      <div class="container container-conteudo">
+        <h2 class="section-title text-center mb-5">CLIENTES</h2>
+
+        <div id="carouselclientes" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="d-flex flex-column align-items-center text-center">
+                <i class="bi bi-handshake mb-3" style="font-size: 3rem; color: #000;"></i>
+                <img src="contract.png" alt="direito civil" class="mb-3" style="width: 60px; height: auto;">
+                <h3 class="fw-bold text-black" style="font-size: 1.3rem; line-height: 1.2; letter-spacing: 2px;">DIREITO
+                  CIVIL <br>(Responsabilidade civil e Consumidor)</h3>
+                <p class="text-black" style="font-size: 0.8rem; line-height: 1.2; letter-spacing: 2px;"> Especialistas
+                  na <strong>segurança contratual e proteção patrimonial</strong>,
+                  dos nossos clientes, com atuação estratégica em casos de <strong>Responsabilidade Civil</strong> <br>
+                  e reparação de danos. Nossa expertise estende-se à defesa
+                  técnica nas <strong>Relações de Consumo</strong>, combatendo abusividades e garantindo o equilíbrio
+                  jurídico <br> fundamentado em quase cinco décadas de tradição
+                  e rigor técnico..</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-flex flex-column align-items-center text-center">
+                <i class="bi bi-gavel mb-3" style="font-size: 3rem; color: #000;"></i>
+                <img src="jury.png" alt="direito penal" class="mb-3" style="width: 60px; height: auto;">
+                <h3 class="fw-bold text-black" style="font-size: 1.3rem; line-height: 1.2; letter-spacing: 2px;">DIREITO
+                  PENAL E SUSTENTAÇÃO ORAL</h3>
+                <p class="text-black" style="font-size: 0.8rem; line-height: 1.2; letter-spacing: 2px;">Atuação
+                  estratégica em crimes de alta complexidade e instâncias superiores. <br>
+                  Especialistas em <strong>Sustentação Oral no STJ e STF</strong>, garantindo uma defesa técnica e
+                  combativa <br>
+                  fundamentada em décadas de experiência jurídica e rigorosa proteção das garantias constitucionais.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-flex flex-column align-items-center text-center">
+                <i class="bi bi-gavel mb-3" style="font-size: 3rem; color: #000;"></i>
+                <img src="passport.png" alt="direito internacional e cidadania" class="mb-3"
+                  style="width: 70px; height: auto;">
+                <h3 class="fw-bold text-black" style="font-size: 1.3rem; line-height: 1.2; letter-spacing: 2px;">DIREITO
+                  INTERNACIONAL E CIDADANIA</h3>
+                <p class="text-black" style="font-size: 0.8rem; line-height: 1.2; letter-spacing: 2px;">Especialistas em
+                  Nacionalidade Portuguesa, Homologação de Sentenças,
+                  Divórcios, Heranças e Processos Especiais entre Brasil e Portugal.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-flex flex-column align-items-center text-center">
+                <i class="bi bi-gavel mb-3" style="font-size: 3rem; color: #000;"></i>
+                <img src="factory.png" alt="direito trabalhista" class="mb-3" style="width: 70px; height: auto;">
+                <h3 class="fw-bold text-black" style="font-size: 1.3rem; line-height: 1.2; letter-spacing: 2px;">DIREITO
+                  TRABALHISTA</h3>
+                <p class="text-black" style="font-size: 0.8rem; line-height: 1.2; letter-spacing: 2px;">Foco na
+                  <strong>mitigação de passivos trabalhistas</strong> e defesa corporativa em alta complexidade. <br>
+                  Unimos compliance preventivo e atuação técnica perante os Tribunais (TRTs e TST), garantindo segurança
+                  jurídica e <br> proteção ao patrimônio empresarial com
+                  soluções personalizadas para cada modelo de negócio.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-flex flex-column align-items-center text-center">
+                <i class="bi bi-buildings mb-3" style="font-size: 3rem; color: #000;"></i>
+                <h3 class="fw-bold text-black" style="font-size: 1.3rem; line-height: 1.2; letter-spacing: 2px;">
+                  DIREITO EMPRESARIAL E SOCIETÁRIO</h3>
+                <p class="text-black" style="font-size: 0.8rem; line-height: 1.2; letter-spacing: 2px;">
+                  Consultoria estratégica focada na <strong>viabilidade do negócio e segurança dos sócios</strong>.
+                  Atuamos na elaboração de contratos complexos, <br> estruturação de sociedades e resolução de conflitos
+                  societários,
+                  garantindo o equilíbrio jurídico necessário para o crescimento sustentável e a proteção do patrimônio
+                  empresarial.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselclientes" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselclientes" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFISSIONAIS -->
+
+    <section id="profissionais" class="secao-fullscreen">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">PROFISSIONAIS</h2>
+
+        <div class="row justify-content-center">
+
+          <div class="col-md-5 col-lg-4 mx-lg-5 mb-4">
+            <div class="card-profissional">
+              <div class="container-foto">
+                <img src="marco.png" class="foto-advogado filter-grayscale" alt="Marco A. Lintz Leite">
+              </div>
+              <hr class="linha-divisoria">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h4 class="nome-advogado text-uppercase">Marco A. Lintz Leite</h4>
+                  <p class="cargo-advogado">SÓCIO-FUNDADOR</p>
+                </div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalMarco">
+                  <img src="sdo-3.png" class="icone-curriculo" alt="Currículo">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-lg-4 mx-lg-5 mb-4">
+            <div class="card-profissional">
+              <div class="container-foto">
+                <img src="advogado_bernardo_lintz.jpg" class="foto-advogado foto-maior filter-grayscale"
+                  alt="Bernardo Lintz">
+              </div>
+              <hr class="linha-divisoria">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h4 class="nome-advogado text-uppercase">Bernardo Lintz</h4>
+                  <p class="cargo-advogado">SÓCIO</p>
+                </div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalBernardo">
+                  <img src="sdo-3.png" class="icone-curriculo" alt="Currículo">
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="modalMarco" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content border-0 shadow-lg">
+          <div class="modal-header border-0 bg-light">
+            <h4 class="modal-title fw-bold" style="color: #333;">
+              MARCO ANTÔNIO LINTZ LEITE <br>
+              <span style="font-size: 0.9rem; font-weight: 400; color: #666;">Sócio-Fundador | OAB/RJ 35.135 | OA/PT
+                66.641</span>
+            </h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body p-4" style="text-align: justify; line-height: 1.7; color: #444;">
+
+            <h5 class="fw-bold mb-3 border-bottom pb-2" style="letter-spacing: 1px;">PERFIL PROFISSIONAL</h5>
+            <p>Fundador do escritório <strong>Lintz Advogados</strong>, o Dr. Marco Antônio Lintz Leite é uma referência
+              em advocacia estratégica com mais de 45 anos de carreira. Advogado e parecerista, sua trajetória é
+              alicerçada no rigor ético e na excelência técnica. Desde a fundação do escritório em 1978, na Avenida
+              Franklin Roosevelt, vem moldando o exercício do Direito através de uma atuação dedicada à defesa
+              intransigente dos interesses de seus constituintes, aliando a tradição jurídica à visão de futuro.</p>
+
+            <h5 class="fw-bold mt-4 mb-3 border-bottom pb-2" style="letter-spacing: 1px;">CARREIRA</h5>
+            <p>Bacharel em Direito pela Universidade Estácio de Sá (1978), iniciou sua sólida formação no escritório
+              Laércio Guarçoni Associados. Posteriormente, aprimorou sua expertise no gabinete do ilustre Magistrado e
+              Professor João Bosco C. Lanna, experiência fundamental que refinou sua visão sobre a aplicação da justiça
+              e a hermenêutica jurídica.</p>
+            <p>Ao longo de quatro décadas, consolidou-se como um especialista em tribunais, com vasta experiência
+              perante os <strong>Egrégios Tribunais e Cortes Superiores (STJ e STF)</strong>. Sua atuação é reconhecida
+              pela elaboração de memoriais densos e pela realização de sustentações orais memoráveis, onde o domínio da
+              oratória e do processo penal e civil se traduzem em resultados decisivos.</p>
+
+            <h5 class="fw-bold mt-4 mb-3 border-bottom pb-2" style="letter-spacing: 1px;">FORMAÇÃO</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><strong>Bacharel</strong> em Direito pela Universidade Estácio de Sá (1978)</li>
+              <li class="mb-2"><strong>Pós-Graduação:</strong> Especialista em Responsabilidade Civil e Contratos pela
+                UNESA.</li>
+            </ul>
+            <h5 class="fw-bold mt-4 mb-3 border-bottom pb-2" style="letter-spacing: 1px;">IDIOMAS</h5>
+            <p> Português <br> Espanhol </p>
+
+            <h5 class="fw-bold mt-4 mb-3 border-bottom pb-2" style="letter-spacing: 1px;">ADMISSÕES</h5>
+
+            <p><i class="bi bi-award me-2 text-dark"></i><strong>Brasil:</strong> Membro ativo da Ordem dos Advogados do
+              Brasil (Seccional Rio de Janeiro).</p>
+            <p><i class="bi bi-award me-2 text-dark"></i><strong>Portugal:</strong> Membro ativo na Ordem dos Advogados
+              de Portugal (Conselho Regional do Porto), habilitado para o exercício da advocacia transnacional.</p>
+
+            <h5 class="fw-bold mt-4 mb-3 border-bottom pb-2" style="letter-spacing: 1px;">PRINCIPAIS ÁREAS DE ATUAÇÃO
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><strong>Direito Penal de Alta Complexidade:</strong> Sustentações orais e recursos
+                especiais/extraordinários.</li>
+              <li class="mb-2"><strong>Direito Civil e Contratos:</strong> Elaboração de pareceres e estruturação de
+                negócios jurídicos robustos.</li>
+              <li class="mb-2"><strong>Direito Empresarial:</strong> Consultoria para gestão de crises e proteção
+                patrimonial.</li>
+              <li class="mb-2"><strong>Direito Internacional:</strong> Assessoria jurídica em processos de cidadania e
+                sucessões entre Brasil e Portugal.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-  
-  
-    </header>
-    <main>
 
-    </main>
-    <footer>
+    <div class="modal fade" id="modalBernardo" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content border-0 shadow-lg">
+          <div class="modal-header border-0 bg-light">
+            <h4 class="modal-title fw-bold" style="color: #333;">
+              BERNARDO LINTZ <br>
+              <span style="font-size: 0.9rem; font-weight: 400; color: #525151;">Sócio | OAB/RJ 187.486</span>
+            </h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
 
+          <div class="modal-body p-4" style="text-align: justify; line-height: 1.7; color: #444;">
+
+            <h5 class="fw-bold mb-3 border-bottom pb-2" style="letter-spacing: 1px;">PERFIL PROFISSIONAL</h5>
+            <p>Sócio do escritório <strong>Lintz Advogados</strong> desde 2015, Bernardo Lintz consolidou sua carreira
+              através de uma atuação estratégica e multidisciplinar. Com uma sólida base no Direito do Trabalho e
+              Direito Civil, sua prática é marcada pela gestão de contenciosos de alta complexidade e pela assessoria
+              jurídica preventiva para grupos empresariais de grande porte. Sua trajetória une a agilidade das demandas
+              modernas ao rigor técnico e tradição que definem o legado da Família Lintz no cenário jurídico brasileiro.
+            </p>
+
+            <h5 class="fw-bold mt-4 mb-3 border-bottom pb-2" style="letter-spacing: 1px;">CARREIRA</h5>
+            <p>Bacharel em Direito pela Universidade Estácio de Sá (UNESA), iniciou sua trajetória em 2009 na
+              <strong>Confederação Brasileira de Voleibol (CBV)</strong>. Durante este período, atuou na vanguarda do
+              Direito Desportivo e Administrativo, lidando com processos de licitação e a estruturação jurídica de
+              Projetos da Lei de Incentivo ao Esporte, experiência que lhe conferiu uma visão diferenciada sobre gestão
+              de recursos e conformidade legal. <br>  <br> Buscando especialização no contencioso corporativo, integrou o conceituado
+              escritório <strong>Veirano Advogados</strong>. Por quase três anos, atuou intensamente na área do Direito do Trabalho,
+              defendendo interesses de empresas multinacionais e grandes grupos econômicos, desenvolvendo teses fáticas e jurídicas
+              em cenários de alta exigência técnica. <br>  <br> 
+              Ao final de 2013, assumiu um desafio executivo-jurídico na região Fluminense ao liderar o departamento jurídico do <strong>Grupo CIAC</strong> — 
+              renomado conglomerado do setor automotivo com mais de 40 anos de mercado. Como head jurídico, foi o responsável direto por toda a 
+              carteira de contencioso Civil (Consumidor e Responsabilidade Civil) e Trabalhista, gerindo processos em
+              diversas comarcas nos estados do Rio de Janeiro, Minas Gerais e São Paulo. Essa experiência
+              permitiu o desenvolvimento de uma advocacia voltada para resultados e mitigação de riscos empresariais.</p>
+
+            <h5 class="fw-bold mt-4 mb-3 border-bottom pb-2" style="letter-spacing: 1px;">FORMAÇÃO</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><strong>Bacharel</strong> em Direito pela Universidade Estácio de Sá (2013)</li>
+            </ul>
+
+            <h5 class="fw-bold mt-4 mb-3 border-bottom pb-2" style="letter-spacing: 1px;">IDIOMAS</h5>
+            <p> Português <br> Inglês <br> Hebraico <br> Espanhol </p>
+
+
+            <h5 class="fw-bold mt-4 mb-3 border-bottom pb-2" style="letter-spacing: 1px;">ADMISSÕES</h5>
+            <p><i class="bi bi-award me-2 text-dark"></i>Membro ativo da Ordem dos Advogados do Brasil (Seccional Rio de
+              Janeiro).</p>
+
+            <h5 class="fw-bold mt-4 mb-3 border-bottom pb-2" style="letter-spacing: 1px;">PRINCIPAIS ÁREAS DE ATUAÇÃO
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><strong>Direito do Trabalho
+                  Estratégico:</strong> Defesa patronal, mitigação de passivos e compliance trabalhista.</li>
+              <li class="mb-2"> <strong>Responsabilidade Civil e
+                  Consumidor:</strong> Gestão de crises e contencioso de escala para o setor automotivo e comercial.
+              </li>
+              <li class="mb-2"><strong>Direito Administrativo e
+                  Licitações:</strong> Consultoria fundamentada na experiência junto à Lei de Incentivo ao Esporte.</li>
+              <li class="mb-2"> <strong>Gestão de Contencioso
+                  Multiestadual:</strong> Operações jurídicas integradas nos estados de RJ, SP e MG.</li>
+              <li class="mb-2"><strong>Contratos e Negociações
+                  Corporativas:</strong> Elaboração e revisão estratégica de instrumentos jurídicos empresariais.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="fale_conosco" class="secao-integrada">
+    <div class="container">
+      <div class="row align-items-start">
+
+        <div class="col-lg-5 mb-5">
+          <h2 style="color: rgb(2, 0, 0); font-weight: 700; font-family: 'Manrope', sans-serif;">Fale Conosco</h2>
+          <div style="width: 40px; height: 3px; background-color: #e65100; margin: 20px 0;"></div>
+          <p class="text-muted">Fique à vontade para nos contatar a qualquer momento através do nosso formulário de
+            contato. Estamos ansiosos para ouvi-lo(a).</p>
+          <p class="small text-muted mt-4">
+            Para mais informações sobre como tratamos seus Dados Pessoais, consulte nossa <a href="#"
+              data-bs-toggle="modal" data-bs-target="#modalPoliticadePrivaciade"
+              class="fw-bold text-primary text-decoration-none">política de privacidade</a>.
+          </p>
+          <p class="small text-muted mt-4">
+            O uso deste site é regido pelos nossos <a href="#" data-bs-toggle="modal" data-bs-target="#modalTermos"
+              class="fw-bold text-primary text-decoration-none">termos de uso</a>.
+          </p>
+        </div>
+
+        <div class="col-lg-7">
+          <form action="#" method="POST">
+            <div class="row g-3">
+              <div class="col-12">
+                <input type="text" class="form-control py-3 input-cinza-profissional" placeholder="Nome*" required>
+              </div>
+              <div class="col-12">
+                <input type="email" class="form-control py-3 input-cinza-profissional" placeholder="E-mail*" required>
+              </div>
+              <div class="col-12">
+                <input type="tel" class="form-control py-3 input-cinza-profissional" placeholder="Telefone">
+              </div>
+              <div class="col-12">
+                <textarea class="form-control py-3 input-cinza-profissional" rows="5" placeholder="Mensagem*"
+                  required></textarea>
+              </div>
+              <div class="col-12 text-end mt-4">
+                <button type="submit" class="btn px-5 py-2 text-white fw-bold"
+                  style="background-color: rgb(2, 0, 0); border-radius: 0;">ENVIAR</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="footer-full">
+      <div class="container">
+        <div class="row mb-5 gy-4">
+          <div class="col-md-3">
+            <h6 class="fw-bold small mb-3">RIO DE JANEIRO</h6>
+            <p class="small opacity-75">Rua Mario Covas Jr, 335<br>Barra da Tijuca</p>
+            <p class="small fw-bold">+55 21 3148 4340</p>
+          </div>
+          <div class="col-md-3">
+            <h6 class="fw-bold small mb-3">PORTUGAL</h6>
+            <p class="small opacity-75">Av. General Torres, 313<br>V. N. de Gaia</p>
+            <p class="small fw-bold">+351 938 477 452</p>
+          </div>
+          <div class="col-md-3">
+            <h6 class="fw-bold small mb-3">ISRAEL</h6>
+            <p class="small opacity-75">HaRav Reines, 7<br>Bnei Brak</p>
+            <p class="small fw-bold">+972 58 782 8197</p>
+          </div>
+          <div class="col-md-3 text-md-end">
+            <img src="logo_lintz_advogados.png" style="height: 40px; margin-bottom: 20px;">
+            <div class="d-flex justify-content-md-end gap-3">
+              <a href="https://br.linkedin.com/company/lintz-advogados" class="text-white opacity-75"><i
+                  class="bi bi-linkedin fs-5"></i></a>
+              <a href="https://www.instagram.com/lintzadvogados/" class="text-white opacity-75"><i
+                  class="bi bi-instagram fs-5"></i></a>
+              <a href="https://www.youtube.com/c/LintzAdvogados" class="text-white opacity-75"><i
+                  class="bi bi-youtube fs-5"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr style="border-color: rgb(2, 0, 0);">
+        <div class="row pt-3 small opacity-50">
+          <div class="col-md-6 text-center text-md-start">© 2024 Lintz Advogados.</div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-white text-decoration-none mx-2" data-bs-toggle="modal"
+              data-bs-target="#modalSeguranca">Política de Segurança</a>
+            <a href="#" class="text-white text-decoration-none mx-2" data-bs-toggle="modal"
+              data-bs-target="#modalPrivacidade">Privacidade</a>
+          </div>
+        </div>
+      </div>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+  </section>
 
-<!-- https://bernardolintz.wixsite.com/lintzadv -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const bg = document.querySelector(".hero-bg");
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let posX = 0;
+    let posY = 0;
+
+    // Sensibilidade: aumente este número para ir mais devagar, diminua para ir mais rápido
+    const speedFactor = 0.05;
+
+    // Limite de movimento (deve bater com o scale do CSS para não mostrar fundo branco)
+    // Com scale(1.5), podemos mover até 25% para cada lado
+    const limit = 20;
+
+    document.addEventListener("mousemove", (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function animate() {
+      // Calcula a distância do mouse em relação ao centro (-1 a 1)
+      const deltaX = (mouseX - window.innerWidth / 2) / (window.innerWidth / 2);
+      const deltaY = (mouseY - window.innerHeight / 2) / (window.innerHeight / 2);
+
+      // Atualiza a posição gradualmente (Velocidade)
+      posX -= deltaX * speedFactor * 10;
+      posY -= deltaY * speedFactor * 10;
+
+      // Trava o movimento nos limites para não aparecer fundo branco
+      posX = Math.max(-limit, Math.min(limit, posX));
+      posY = Math.max(-limit, Math.min(limit, posY));
+
+      // Aplica a transformação
+      if (bg) {
+        bg.style.transform = `translate(${posX}%, ${posY}%) scale(1.5)`;
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+    animate(); // Inicia o loop de animação
+  </script>
+  <div class="modal fade" id="modalSeguranca" tabindex="-1" aria-labelledby="modalSegurancaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content" style="color: #333; font-family: 'Manrope', sans-serif;">
+
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title fw-bold" id="modalSegurancaLabel" style="color: #000;">Política de Segurança da
+            Informação</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body p-4" style="font-size: 0.9rem; line-height: 1.6; text-align: justify;">
+          <h6 class="fw-bold">1. Compromisso e Diretrizes Gerais</h6>
+          <p>No <strong>Lintz Advogados</strong>, a segurança dos dados de nossos clientes e a integridade de nossas
+            operações são pilares fundamentais. Esta Política estabelece as normas para garantir que a informação — seja
+            ela digital ou física — seja tratada com o mais alto rigor de proteção contra acessos não autorizados,
+            perdas ou modificações indevidas.</p>
+
+          <h6 class="fw-bold mt-4">2. Objetivos Principais</h6>
+          <p>Esta norma visa assegurar os três pilares da Segurança da Informação:</p>
+          <ul>
+            <li><strong>Confidencialidade:</strong> Garantir que a informação seja acessível apenas por quem possui
+              autorização legítima.</li>
+            <li><strong>Integridade:</strong> Salvaguardar a precisão e a completude das informações e dos métodos de
+              processamento.</li>
+            <li><strong>Disponibilidade:</strong> Garantir que os usuários autorizados tenham acesso à informação e aos
+              ativos correspondentes.</li>
+          </ul>
+
+          <h6 class="fw-bold mt-4">3. Escopo e Abrangência</h6>
+          <p>As diretrizes aqui contidas aplicam-se a todos os sócios, advogados, estagiários, colaboradores
+            administrativos e prestadores de serviços que tenham acesso aos sistemas do escritório.</p>
+
+          <h6 class="fw-bold mt-4">4. Responsabilidades Individuais</h6>
+          <p>É dever de todos utilizar os recursos tecnológicos estritamente para fins profissionais, manter sigilo
+            absoluto sobre senhas e reportar imediatamente qualquer suspeita de vulnerabilidade ou perda de
+            dispositivos.</p>
+
+          <h6 class="fw-bold mt-4">5. Proteção de Dados (LGPD)</h6>
+          <p>O tratamento de dados pessoais no âmbito do escritório observa rigorosamente a legislação vigente,
+            processando apenas os dados estritamente necessários para a prestação dos serviços jurídicos.</p>
+
+          <hr class="my-4">
+          <p class="small text-muted text-end">Última atualização: 11 de Março de 2026.</p>
+        </div>
+
+        <div class="modal-footer border-top-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+            style="background-color: #000; border: none;">Fechar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalPoliticadePrivaciade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content" style="color: #333; font-family: 'Manrope', sans-serif;">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title fw-bold">Política de Privacidade</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4" style="font-size: 0.9rem; line-height: 1.6; text-align: justify;">
+          <h6 class="fw-bold">Coleta de Dados</h6>
+          <p>O <strong>Lintz Advogados</strong> coleta apenas os dados pessoais fornecidos voluntariamente por meio de
+            nossos formulários de contato ou e-mail, como nome, telefone e endereço eletrônico, com a finalidade
+            exclusiva de responder a solicitações de serviços jurídicos.</p>
+
+          <h6 class="fw-bold mt-4">Uso das Informações</h6>
+          <p>As informações coletadas são utilizadas para a prestação de serviços advocatícios, envio de informativos
+            jurídicos (quando autorizado) e cumprimento de obrigações legais. Não compartilhamos seus dados com
+            terceiros para fins publicitários.</p>
+
+          <h6 class="fw-bold mt-4">Seus Direitos (LGPD)</h6>
+          <p>Nos termos da Lei Geral de Proteção de Dados, o titular tem direito a solicitar o acesso, a correção ou a
+            exclusão de seus dados de nossa base a qualquer momento, enviando um e-mail para nossa equipe de
+            conformidade.</p>
+
+          <hr class="my-4">
+          <p class="small text-muted text-end">Última atualização: 11 de Março de 2026.</p>
+        </div>
+        <div class="modal-footer border-top-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+            style="background-color: #000; border: none;">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalTermos" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content" style="color: #333; font-family: 'Manrope', sans-serif;">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title fw-bold">Termos de Uso</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4" style="font-size: 0.9rem; line-height: 1.6; text-align: justify;">
+          <h6 class="fw-bold">Conteúdo Informativo</h6>
+          <p>Todo o conteúdo publicado neste website tem caráter meramente informativo e educacional. As publicações e
+            artigos não constituem parecer jurídico ou aconselhamento legal para casos específicos.</p>
+
+          <h6 class="fw-bold mt-4">Propriedade Intelectual</h6>
+          <p>Os textos, logotipos e imagens exibidos são de propriedade exclusiva do <strong>Lintz Advogados</strong>. A
+            reprodução total ou parcial é proibida sem autorização expressa por escrito.</p>
+
+          <h6 class="fw-bold mt-4">Limitação de Responsabilidade</h6>
+          <p>O escritório não se responsabiliza por decisões tomadas com base nas informações contidas neste site sem a
+            consulta direta a um advogado devidamente habilitado.</p>
+
+          <hr class="my-4">
+          <p class="small text-muted text-end">Última atualização: 11 de Março de 2026.</p>
+        </div>
+        <div class="modal-footer border-top-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+            style="background-color: #000; border: none;">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

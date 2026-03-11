@@ -1,3 +1,377 @@
-.selector-for-some-widget {
-    box-sizing: content-box;
+/* --- 1. NAVBAR E GLOBAIS (Mantido seu estilo) --- */
+body {
+    font-family: 'Manrope', sans-serif;
+    color: #555252;
+    margin: 0; 
+    padding: 0;
+}
+
+.navbar-nav .nav-link {
+    color: #555 !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: #000 !important;
+    font-weight: 600 !important;
+}
+
+header.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Garante que fique acima de outros elementos */
+    background-color: #696868; /* Evita transparência ao rolar */
+    border-bottom: 1px solid #eee; /* Opcional: uma linha sutil para separar do conteúdo */
+}
+
+/* --- 2. HERO SECTION (Seu código original completo) --- */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height:90vh; /* Ajustado para 100vh para isolar a seção */
+    overflow: hidden;
+    background-color: #fff; 
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: url('index.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transition: none;      
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Suas Animações da Home */
+.word {
+    display: inline-block;
+    opacity: 0;
+    animation: revealWords 10s infinite;
+}
+.word:nth-child(1) { animation-delay: 2s; }
+.word:nth-child(2) { animation-delay: 2.5s; }
+.word:nth-child(3) { animation-delay: 3s; }
+
+@keyframes revealWords {
+    0% { opacity: 0; transform: translateY(10px); }
+    5% { opacity: 1; transform: translateY(0); }
+    70% { opacity: 1; }
+    80%, 100% { opacity: 0; }
+}
+
+.tracking-in-expand {
+    animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+    0% { letter-spacing: -0.5em; opacity: 0; }
+    40% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+/* --- 3. PADRONIZAÇÃO DE TÍTULOS (Topo da página) --- */
+.section-title {
+    letter-spacing: 4px;
+    font-weight: 800;
+    color: rgb(2, 0, 0);
+    text-transform: uppercase;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+/* --- 4. SEÇÃO INSTITUCIONAL (Seu estilo com ajuste de topo) --- */
+#institucional {
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding-top: 100px; /* Alinhado ao topo */
+    padding-bottom: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#institucional p {
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.0rem;
+    color: rgb(2, 0, 0);;
+    text-align: justify;
+}
+
+.highlight { font-weight: 700; color: #333; }
+
+/* --- 5. SEÇÃO ÁREAS DE ATUAÇÃO (Fundo Rio + Carrossel) --- */
+.secao-areas-custom {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Título no topo */
+    align-items: center;
+    padding-top: 100px; /* Igual ao institucional */
+    padding-bottom: 50px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.fundo-rio-opacidade {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: url('centro_2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.container-conteudo {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Centraliza o carrossel no espaço entre o título e o fim da seção */
+#carouselAreas {
+    margin: auto 0; 
+}
+
+.text-black, #areas-atuacao h2 { color: #000 !important; }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+/* --- SEÇÃO CLIENTES --- */
+.secao-clientes-custom {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Título no topo */
+    align-items: center;
+    padding-top: 100px; /* Igual ao institucional */
+    padding-bottom: 50px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* --- AJUSTE DE CENTRALIZAÇÃO DAS ÁREAS --- */
+
+/* Este mantém o comportamento geral para as outras seções */
+.container-conteudo {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Centraliza o carrossel no espaço entre o título e o fim da seção */
+#carouselclientes {
+    margin: auto 0; 
+}
+
+.text-black, #clientes-atuacao h2 { color: #000 !important; }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+
+/* Força a seção a ocupar a tela inteira e empurrar a anterior para fora */
+.secao-fullscreen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente o conteúdo na tela */
+    align-items: center;
+    background-color: #ffffff;
+    position: relative;
+    /* MARGENS SIMÉTRICAS: 120px no topo e 120px na base */
+    padding-top: 120px; 
+    padding-bottom: 120px; 
+    
+    background-color: #ffffff;
+    box-sizing: border-box;
+    z-index: 10; /* Garante que fique sobreposta se houver vazamento */
+}
+
+/* Estilo da Box Cinza */
+.card-profissional {
+    background-color: #f3f1f1;
+    border: none;
+    border-radius: 2px;
+    padding: 40px; /* Aumentei o preenchimento interno */
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+/* Controle das Fotos */
+.container-foto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.foto-advogado {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Tipografia e Ícone */
+.nome-advogado {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #333;
+    margin: 0;
+}
+
+.cargo-advogado {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 0;
+}
+
+.icone-curriculo {
+    width: 40px;
+    height: auto;
+}
+
+.linha-divisoria {
+    margin: 25px 0;
+    opacity: 0.15;
+}
+
+.modal-body {
+    text-align: justify;
+    text-justify: inter-word; /* Melhora o espaçamento entre as palavras no justificado */
+}
+
+  /* Cor cinza profissional para os inputs (igual aos cards) */
+  .input-cinza-profissional {
+    background-color: #f2f2f2 !important; 
+    border: none !important;
+    border-radius: 4px !important;
+    color: #000000 !important; /* Fonte preta */
+    font-size: 0.95rem;
   }
+
+  /* Reduz o respiro exagerado para o footer subir */
+  .footer-full {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 0 20px 0 !important; /* Reduzi de 80px para 40px */
+    margin-top: 40px !important;      /* Reduzi a distância entre formulário e footer */
+    width: 100%;
+  }
+
+  /* Garante que a seção de contato não "empurre" tudo para fora da tela */
+  .secao-integrada {
+    padding-top: 100px !important; /* Reduzi levemente para ganhar espaço embaixo */
+    padding-bottom: 0 !important;
+    background-color: #ffffff;
+    display: block;
+    width: 100%;
+  }
+
+  /* Ajuste para a logo branca não ocupar muito espaço vertical */
+  .footer-logo {
+    height: 35px !important; 
+    margin-bottom: 15px !important;
+  }
+
+/* Este novo seletor garante que APENAS a lista e o conteúdo de apoio 
+   das áreas fiquem centralizados, sem afetar o título da seção */
+.container-areas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1; /* Faz ele ocupar o espaço restante abaixo do título */
+    margin-top: 20px;
+}
+
+.lista-areas-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 30px; 
+    max-width: 1200px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.area-item {
+    flex: 0 1 calc(25% - 40px); /* Tenta ocupar 25% (4 colunas) */
+    min-width: 180px; /* Não deixa ficar espremido no mobile */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.area-item:hover {
+    transform: translateY(-5px); /* Efeito flutuante ao passar o mouse */
+}
+
+/* Estilização dos Ícones */
+.area-item i {
+    font-size: 2.5rem; /* Tamanho do ícone */
+    color: #000000;    /* Cor combinando com seu título */
+    margin-bottom: 15px;
+}
+
+/* Ajuste do Texto */
+.area-item span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    min-height: 3em; /* Garante que todos os textos ocupem o mesmo espaço vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Para Tablets (2 ou 3 colunas) */
+@media (max-width: 992px) {
+    .area-item {
+        flex: 0 1 calc(33.33% - 40px);
+    }
+}
+
+/* Para Celulares (1 ou 2 colunas) */
+@media (max-width: 576px) {
+    .area-item {
+        flex: 0 1 calc(50% - 20px);
+        min-width: 140px;
+    }
+    .area-item i {
+        font-size: 2rem; /* Ícones um pouco menores no celular */
+    }
+}
